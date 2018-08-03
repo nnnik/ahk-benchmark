@@ -5,7 +5,7 @@ DllCall( "QueryPerformanceFrequency", "Int64*", ticksPerSec)
 
 ; \/ \/ \/ \/ Set pre-run data \/ \/ \/ \/
 DllCall( "LoadLibrary", "Str", "gdiplus")
-DllCall( "gdiplus\GdiplusStartup", "Ptr", pToken, "Ptr", &si, "Ptr", 0)
+DllCall( "gdiplus.dll\GdiplusStartup", "Ptr", pToken, "Ptr", &si, "Ptr", 0)
 ; /\ /\ /\ /\ Set pre-run data /\ /\ /\ /\
 
 DllCall("QueryPerformanceCounter", "Int64*", startTick)
