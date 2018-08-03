@@ -42,6 +42,4 @@ DllCall("QueryPerformanceCounter", "Int64*", endTick)
 DllCall( "gdiplus\GdiplusShutdown", Ptr, pToken)
 ; /\ /\ /\ /\ Clean up benchmark /\ /\ /\ /\
 
-MsgBox, %ErrorLevel%
-MsgBox, %A_LastError%
 FormatResult(reps, startTick, endTick, ticksPerSec, "Pointer DllCall")
