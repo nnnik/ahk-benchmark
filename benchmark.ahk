@@ -32,5 +32,5 @@ FormatResult(reps, startTick, endTick, ticksPerSec, name = "Benchmark") {
 		elpTime := (endTick - startTick) * 1000 / ticksPerSec
 	}
 	
-	MsgBox,,%name%,Reps: %reps%`nStart Tick: %startTick%`nEnd Tick: %endTick%`nTick Frequency: %ticksPerSec%tps`nElapsed Time: %elpTime%%elpSfx%`nTime Per Rep: %repTime%%repSfx%`nAHK Version: %A_AhkVersion%`nError Level: %ErrorLevel%`nLast Error: %A_LastError%
+	MsgBox,,%name%,Reps: %reps%`nStart Tick: %startTick%`nEnd Tick: %endTick%`nTick Frequency: %ticksPerSec%tps`nElapsed Time: %elpTime%%elpSfx%`nTime Per Rep: %repTime%%repSfx%`nAHK Version: %A_AhkVersion%`nOS Version: %A_OSVersion%`nIs 64bit OS: %A_Is64bitOS%`nError Level: %ErrorLevel%`nLast Error: %A_LastError%
 }
