@@ -11,7 +11,7 @@ DllCall( "gdiplus.dll\GdiplusStartup", "Ptr", pToken, "Ptr", &si, "Ptr", 0)
 DllCall("QueryPerformanceCounter", "Int64*", startTick)
 Loop %reps% {
 	; \/ \/ \/ \/ Run benchmark \/ \/ \/ \/
-	DllCall( "gdiplus\GdipGetImageEncodersSize", "UInt*", nCount, "UInt*", nSize)
+	DllCall( "gdiplus.dll\GdipGetImageEncodersSize", "UInt*", nCount, "UInt*", nSize)
 	; /\ /\ /\ /\ Run benchmark /\ /\ /\ /\
 }
 DllCall("QueryPerformanceCounter", "Int64*", endTick)
